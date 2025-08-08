@@ -14,7 +14,7 @@ class InternetChecker:
         """
         Checks internet connectivity by testing common network ports on a given website or IP.
 
-        If no website is provided, defaults to 8.8.8.8.
+        If no website is provided, defaults to 8.8.8.8 (google.com).
         Prints which ports successfully connected to confirm internet access.
         """
         print("Running basic internet connectivity test...")
@@ -33,7 +33,6 @@ class InternetChecker:
         else:
             print("No internet connection detected.")
 
-
     def show_menu(self):
         """
         Displays a menu for internet connectivity checks.
@@ -47,7 +46,7 @@ class InternetChecker:
         print("2. Return to main menu")
         choice = input("Enter your choice (1–2): ")
         if choice == "1":
-            website = input ("What website do you want to check? (leave blank to default to google.com): ")
+            website = input ("\nWhat website do you want to check? (leave blank to default to google.com): ")
             self.check_basic_connection(website)
 
 

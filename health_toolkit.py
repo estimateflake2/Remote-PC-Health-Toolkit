@@ -44,17 +44,16 @@ def main():
 
         if choice == '1':
             check_internet_connection()
-            print("Running internet connectivity check... (Coming soon!)")
         elif choice == '2':
-            print("Checking disk usage... (Coming soon!)")
+            print("\nChecking disk usage... (Coming soon!)")
         elif choice == '3':
-            print("Checking system uptime... (Coming soon!)")
+            print("\nChecking system uptime... (Coming soon!)")
         elif choice == '4':
-            print("Running speed test... (Coming soon!)")
+            print("\nRunning speed test... (Coming soon!)")
         elif choice == '5':
-            print("Check my CPU Model... (Coming soon!)")
+            print("\nCheck my CPU Model... (Coming soon!)")
         elif choice == '6':
-            print("Memory Model... (Coming soon!)")
+            print("\nMemory Model... (Coming soon!)")
         elif choice == '7':
             print("Exiting... Stay safe!")
             sys.exit()
@@ -62,3 +61,4 @@ def main():
             print("Invalid choice. Please enter a number from 1 to 5.")
 if __name__ == "__main__":
     main()
+
