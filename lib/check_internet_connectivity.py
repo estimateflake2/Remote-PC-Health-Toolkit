@@ -1,7 +1,6 @@
 # The socket module allows low-level network communication.
 # In this script, we use it to check if the computer can connect to the internet
 # by trying to establish a connection to a known external server (like Google's DNS).
-
 import socket
 
 class InternetChecker:

@@ -3,6 +3,7 @@
 
 import sys
 from lib.check_internet_connectivity import  InternetChecker
+from  lib.check_disk_usage import DiskUsageTool
 
 def show_menu():
     """
@@ -43,9 +44,10 @@ def main():
         choice = input("Enter your choice (1–7): ")
 
         if choice == '1':
-            check_internet_connection()
+            # check_internet_connection()
+            InternetChecker().show_menu()
         elif choice == '2':
-            print("\nChecking disk usage... (Coming soon!)")
+            DiskUsageTool().show_menu()
         elif choice == '3':
             print("\nChecking system uptime... (Coming soon!)")
         elif choice == '4':
